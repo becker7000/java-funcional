@@ -1,0 +1,73 @@
+JShell es una herramienta de línea de comandos que te permite escribir, probar y experimentar con código Java de manera interactiva. Aquí tienes algunos comandos básicos de JShell:
+
+1. **Ejecutar Código:**
+   Puedes ingresar código Java directamente en JShell para ejecutarlo
+   de forma interactiva.
+    Por ejemplo:
+   ```
+   jshell> int suma = 2 + 3;
+   suma ==> 5
+   ```
+
+2. **Declarar Variables:**
+   Puedes declarar variables y asignarles valores:
+   ```
+   jshell> int x = 10;
+   x ==> 10
+   ```
+
+3. **Definir Funciones (Métodos):**
+   Puedes definir funciones (métodos) y usar expresiones lambda:
+   ```
+   jshell> void saludar(String nombre) {
+   ...>     System.out.println("Hola, " + nombre + "!");
+   ...> }
+   |  created method saludar(String)
+
+   jshell> (int a, int b) -> a + b
+   ```
+
+4. **Mostrar el Tipo de una Variable:**
+   Puedes verificar el tipo de una variable utilizando `/type`:
+   ```
+   jshell> /type x
+   x ==> int
+   ```
+
+5. **Mostrar Historial de Comandos:**
+   Puedes ver el historial de comandos utilizando `/history`:
+   ```
+   jshell> /history
+   ```
+
+6. **Mostrar Ayuda:**
+   Puedes obtener ayuda utilizando `/help`. También puedes obtener
+   ayuda específica sobre un comando utilizando `/help <comando>`:
+   ```
+   jshell> /help
+   jshell> /help /history
+   ```
+
+7. **Salir de JShell:**
+   Puedes salir de JShell utilizando `/exit`:
+   ```
+   jshell> /exit
+   ```
+
+8. **Borrar una Variable o Método:**
+   Puedes borrar una variable o un método utilizando `/drop`:
+   ```
+   jshell> /drop x
+   jshell> /drop saludar
+   ```
+
+9. **Reiniciar JShell:**
+   Puedes reiniciar JShell y eliminar todas las definiciones
+   previas utilizando `/reset`:
+   ```
+   jshell> /reset
+   ```
+
+Estos son algunos de los comandos básicos de JShell.
+Puedes explorar más funcionalidades y comandos específicos
+utilizando la ayuda incorporada con `/help`.
